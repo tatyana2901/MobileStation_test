@@ -22,7 +22,7 @@ public class BasicStation {
     }
 
     public boolean isUserWithinRadius(Point userCoordinate) {
-        return !(coordinate.calcDistTo(userCoordinate) > radius);
+        return !(coordinate.doubleCalcDistTo(userCoordinate) > radius*radius);
     }
 
     public static LinkedHashMap<String, Integer> consolidate(ArrayList<BasicStation> array, Point userCoordinate) {

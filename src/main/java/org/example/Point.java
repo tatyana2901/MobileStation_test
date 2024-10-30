@@ -18,7 +18,7 @@ public class Point {
         this.y = y;
     }
 
-    public double calcDistTo(Point point) {
-        return Math.sqrt((point.getX() - x) * (point.getX() - x) + (point.getY() - y) * (point.getY() - y));
+    public double doubleCalcDistTo(Point point) {
+        return (point.getX() - x) * (point.getX() - x) + (point.getY() - y) * (point.getY() - y);
     }
 }

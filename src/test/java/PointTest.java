@@ -4,38 +4,38 @@ import org.junit.jupiter.api.Test;
 
 public class PointTest {
     @Test
-    void calcDistTo1(){
+    void doubleCalcDistTo1(){
         Point a = new Point(0,0);
         Point b = new Point(0,0);
-        Assertions.assertEquals(0,a.calcDistTo(b));
-        Assertions.assertEquals(0,b.calcDistTo(a));
+        Assertions.assertEquals(0,a.doubleCalcDistTo(b));
+        Assertions.assertEquals(0,b.doubleCalcDistTo(a));
     }
     @Test
-    void calcDistTo2(){
+    void doubleCalcDistTo2(){
         Point a = new Point(0,0);
         Point b = new Point(0,100);
-        Assertions.assertEquals(100,a.calcDistTo(b));
-        Assertions.assertEquals(100,b.calcDistTo(a));
+        Assertions.assertEquals(10000,a.doubleCalcDistTo(b));
+        Assertions.assertEquals(10000,b.doubleCalcDistTo(a));
     }
     @Test
-    void calcDistTo3(){
+    void doubleCalcDistTo3(){
         Point a = new Point(3,0);
         Point b = new Point(0,4);
-        Assertions.assertEquals(5,a.calcDistTo(b));
-        Assertions.assertEquals(5,b.calcDistTo(a));
+        Assertions.assertEquals(25,a.doubleCalcDistTo(b));
+        Assertions.assertEquals(25,b.doubleCalcDistTo(a));
     }
     @Test
-    void calcDistTo4(){
+    void doubleCalcDistTo4(){
         Point a = new Point(3265,5655);
         Point b = new Point(0,100);
-        Assertions.assertEquals(b.calcDistTo(a),a.calcDistTo(b));
+        Assertions.assertEquals(b.doubleCalcDistTo(a),a.doubleCalcDistTo(b));
 
     }
     @Test
-    void calcDistTo5(){
+    void doubleCalcDistTo5(){
         Point a = new Point(1,-10);
         Point b = new Point(-10,0);
-        Assertions.assertEquals(b.calcDistTo(a),a.calcDistTo(b));
+        Assertions.assertEquals(b.doubleCalcDistTo(a),a.doubleCalcDistTo(b));
 
     }
 }
